@@ -1,0 +1,32 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\begin{document}
+
+1. Computing the root node.
+
+\begin{equation}
+\begin{split}
+\phi(NEG) & = 2 \times \frac{85}{165+85} \times (1 - \frac{85}{165+85}) \\
+& = 0.66
+\end{split}
+\end{equation}
+
+1.1 Getting the error rate of X
+
+\begin{equation}
+\begin{split}
+errorRate(X) & = Pr_S(X=0) \times \phi (Pr_S(NEG \mid X=0)) + Pr_S(X=1) \times \phi (Pr_S(NEG \mid X=1)) \\
+&= \frac{150}{250} \times 2 \times \frac{45}{150} \times (1 - \frac{45}{150}) + \frac{100}{250} \times 2 \times \frac{40}{100} \times (1 - \frac{40}{100}) \\
+&= 0.192
+\end{split}
+\end{equation}
+
+1.2 Getting the gain of X
+
+\begin{equation}
+Gain(X) = 0.468
+\end{equation}
+
+\end{document}
